@@ -1,9 +1,7 @@
-FROM alpine
+FROM alpine:3.9.2
 
-MAINTAINER Maik Ellerbrock (https://github.com/ellerbrock)
+MAINTAINER v7lin <v7lin@qq.com>
 
 RUN apk update && \
   apk add --no-cache openssl && \
   rm -rf /var/cache/apk/*
-
-ENTRYPOINT ["openssl"]
