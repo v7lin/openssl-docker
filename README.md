@@ -8,6 +8,7 @@
 * docker
 
 ````
+docker run --rm -it v7lin/openssl sh -c "openssl version"
 docker run --rm -it -v ${PWD}:/export v7lin/openssl sh -c "openssl enc -e -${ENC_METHOD} -k ${ENC_PASSWORD} -in /export/Dockerfile -out /export/Dockerfile.enc"
 ````
 
