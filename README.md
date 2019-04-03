@@ -23,5 +23,5 @@ docker run --rm -it -v ${PWD}:/export v7lin/openssl sh -c "openssl enc -e -${ENC
     ENC_PASSWORD:
       from_secret: ENC_PASSWORD
   commands:
-  - openssl enc -d -$ENC_METHOD -k $ENC_PASSWORD -in .drone.yml.enc -out .drone.yml
+  - openssl enc -d -$ENC_METHOD -k $ENC_PASSWORD -in Dockerfile.enc -out Dockerfile
 ````
